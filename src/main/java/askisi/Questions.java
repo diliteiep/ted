@@ -16,7 +16,7 @@ import java.sql.*;
 @WebServlet("/Questions")
 public class Questions extends HttpServlet {
 	String driver = "com.mysql.jdbc.Driver";
-	String dbURL = "jdbc:mysql://127.5.86.130:3306/askisidb?user=askisi&password=@sk1s1!"; // ?user=blah&password=blah"
+	String dbURL = "jdbc:mysql://127.5.86.130:3306/askisidb?useUnicode=true&characterEncoding=UTF-8&user=askisi&password=@sk1s1!"; // ?user=blah&password=blah"
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
